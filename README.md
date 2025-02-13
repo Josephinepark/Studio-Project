@@ -2,6 +2,8 @@
 
 My theme : Glitch
 
+Website Link : https://josephinepark.github.io/Studio-Project/
+
 -------------------------------------
 
 ## Notes of the interests of the theme
