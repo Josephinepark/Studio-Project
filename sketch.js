@@ -1,9 +1,8 @@
 let noiseScale = .1
 let webcam;
-let selectMenu;
-let option;
 let Images = [];
 let displayedImages = [];
+let count = 0;
 
 function preload() {
  Images[0] = loadImage('image/meme1.png');
@@ -37,15 +36,18 @@ function setup() {
   background(255,100,255);
   createCanvas(windowWidth,windowHeight);
 
+
   // webcam
   webcam = createCapture(VIDEO);
-  webcam.size(200, 150);
+
+  webcam.size(400, 300);
   webcam.hide();
+  
 
 }
 
 function draw() {
-  
+  frameRate(5);
   // noise background
   for (let x=0; x<width; x++){
     let noiseVal = noise((mouseX+x)*noiseScale, mouseY*noiseScale);
@@ -53,34 +55,44 @@ function draw() {
     line(x,mouseY+noiseVal*80,x,height);
   }
   
+  if (count % 10 !== 0) {
+    // Draw the webcam underneath the images
+    image(webcam,windowWidth/2-200,windowHeight/2-150);
+  }
+ 
 
-    filter(THRESHOLD);
+  filter(DILATE);
   
   for (let imgData of displayedImages) {
+    
+    imgData.img.filter(INVERT);
     image(imgData.img, imgData.x, imgData.y,imgData.img.width/2,imgData.img.height/2);
-
+    
   }
-
-  // webcam
-  
-  image(webcam, windowWidth/2 - 100, windowHeight/2 - 100);
+  if (count % 10 === 0) {
+    // Draw the webcam on top when count is a multiple of 10
+    image(webcam,windowWidth/2-200,windowHeight/2-150);
+  }
+ 
 
 }
 
 function mouseClicked(){
+  count = count +2;
   let firstImg = random(Images);
   let secondImg = random(Images);
+ 
 
   let firstImgData = {
     img: firstImg,
-    x: random(windowWidth - firstImg.width),
-    y: random(windowHeight - firstImg.height)
+    x: random(windowWidth - firstImg.width/2),
+    y: random(windowHeight - firstImg.height/2)
   };
 
   let secondImgData = {
     img: secondImg,
-    x: random(windowWidth - secondImg.width),
-    y: random(windowHeight - secondImg.height)
+    x: random(windowWidth - secondImg.width/2),
+    y: random(windowHeight - secondImg.height/2)
   };
 
   displayedImages.push(firstImgData, secondImgData);
