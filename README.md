@@ -32,7 +32,7 @@ I received positive feedback from my professor on the outcomes of Workshop 3 and
 - Five or more images assigned to each dropdown selection.
 - Applying cracked or blurry filters to each image.
 <br>
-My creative outcome does not involve actual glitches occurring; instead, it visually represents the essence of a glitch. I refined my approach based on selected artworks and readings. Specifically, Rosa Menkman’s A Vernacular of File Formats inspired me, as it intentionally introduces file corruption to create art. However, my approach differs: rather than inducing real glitches, I simulate the appearance of glitches through visual representation.
+My creative outcome does not involve actual glitches occurring; instead, it visually represents the essence of a glitch. I refined my approach based on selected artworks and readings. Specifically, Rosa Menkman’s A Vernacular of File Formats inspired me, as it intentionally introduces file corruption to create art. However, my approach differs: rather than inducing real glitches, I simulate the appearance of glitches through visual outcome.
 <br>
 <br>
 
@@ -43,7 +43,7 @@ First, I had to decide on the background. To give users a strong visual effect, 
 https://p5.glitch.me/#examples 
 <br>
 
-While exploring the p5.js documentation and searching for various effects, I found an interesting glitch effect implemented through code.
+While exploring the p5.js documentation and searching for various effects, I found an interesting glitch effect implemented through code. (noise) 
 https://editor.p5js.org/nikiafenix/sketches/plkcniKMn 
 
 
