@@ -169,5 +169,22 @@ https://www.youtube.com/watch?v=i2C1hrJMwz0 <Br>
 https://www.youtube.com/watch?v=FVYGyaxG4To <Br>
 <Br>
 
+- Image link : <Br>
+<Br>
+https://www.bu.edu/articles/2024/10-memes-to-describe-the-first-week-of-school/<Br>
+<Br>
+https://www.westminster.ac.uk/about-us/our-university/outreach-for-schools-and-colleges/extended-project-qualification-epq-support/knowing-meme-knowing-you-how-memes-influence-our-society <Br>
+<Br>
+https://editor.p5js.org/nikiafenix/sketches/plkcniKMn <Br>
+<Br>
+https://developers.google.com/maps/documentation/maps-static  <Br>
+<Br>
+https://pixabay.com/photos/europe-countries-map-continent-3483539/  <Br>
+<Br>
+https://developers.google.com/codelabs/maps-platform/maps-platform-101-react-js#0 <Br>
+<Br>
+https://wordart.com/ <Br>
+<Br>
+https://www.uxforthemasses.com/word-clouds/ <Br>
 
 
