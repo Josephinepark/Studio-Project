@@ -68,7 +68,7 @@ I managed to fix this issue by adjusting the order of the filter function in the
 <img width="959" alt="6  THRESHOLD filter" src="https://github.com/user-attachments/assets/4f5b3316-e741-44a0-af73-be062eedc9fd" />
 <br>
 <br>
-After that I made a dropdown menu that was covered in Workshop 5. https://p5js.org/reference/p5/createSelect/ <br>
+After that, I made a dropdown menu that was covered in Workshop 5. https://p5js.org/reference/p5/createSelect/ <br>
 <br> Then I checked how it works, and I decided to switch to `mouse clicked()` instead of drop down menu because if the background works for mouse movement and drop down menu is also mouse click and image creation is also mouse click, it will be too moldless work due to too many things.
 
 
@@ -79,40 +79,41 @@ After that I made a dropdown menu that was covered in Workshop 5. https://p5js.o
 Then I uploaded the images after changing them in the drop down menu.<br>
 https://p5js.org/reference/p5/image/ <br>
 <br>
-I thought that the expression method of infinite information pouring into the user was more suitable for the me called glitch than the user choosing a specific topic with the dropdown menu. https://p5js.org/reference/p5/mouseClicked/  At first, when I just placed the images, I thought it was too simple, and it was judged that there was no impact, so I tried various filters.<br>
+I thought that the expression of infinite information pouring into the user is more suitable for the theme of glitch than for the user to select a specific topic with a drop-down menu. https://p5js.org/reference/p5/mouseClicked/  At first, when I just placed the images, I thought it was too simple, and there is no impact, so I tried various filters and making some changes.<br>
 <br>
 At first, it was intended to indicate the user's cognitive error by putting a filter on the camera, but when the filter was put on the camera, the filter was applied to the background as well. So I thought that the user reflected on the camera should express the appearance of being lost due to the overflowing information and entering the digital world as it is.<br>
 <br>
 
-During this progress, I have asked chatgpt how to solve this problem.
-My Prompt : How can I only make the (Gray) filter apples the webcam not for the background.
+During this progress, I have asked chatgpt how to solve this problem.<br>
+My Prompt : How can I only make the (Gray) filter apples the webcam not for the background.<br>
 Response : To apply the GRAY filter only to the webcam feed and not to the entire canvas, you should isolate the filtering effect by using push() and pop(). These functions help to contain the transformation (like filter(GRAY)) to only the webcam image.
 <br>
 <img width="226" alt="image" src="https://github.com/user-attachments/assets/846dec52-d8dc-4c9a-a0a4-5e4f7eeeeafb" />
 <br>
-My Prompt : Still not working. How can I isolate the filter form the background.
-Responst : To make the webcam grayscale while keeping the background unaffected, you can use tint(255, 0). This method is much simpler than using filter(GRAY), which affects the entire canvas.<br>
+My Prompt : Still not working. How can I isolate the filter form the background. <br>
+Response : To make the webcam grayscale while keeping the background unaffected, you can use tint(255, 0). This method is much simpler than using filter(GRAY), which affects the entire canvas.<br>
+
+In addition, I asked my friends and looked for a solution together. Furthermore, I wanted to place the camera in front of me so that users could continuously see themselves in the digital world. <br>
 <img width="224" alt="image" src="https://github.com/user-attachments/assets/63249b63-4c8f-4d97-b530-fc213a9d9872" /> <br>
 <br>
-In addition, I asked my friends and looked for a solution together. Furthermore, I wanted to place the camera in front of me so that users could continuously see themselves in the digital world.
-
 <br>
 <img width="959" alt="11  xy를 랜덤으로 하는 중 (chatgpt 과정)" src="https://github.com/user-attachments/assets/d529afeb-9265-4a43-ac1a-97c154245e7d" />
 <br>
-My prompt : what is the p5.js code to reduce size of image in proportion
+My prompt : what is the p5.js code to reduce size of image in proportion <br>
 Response : To reduce the size of an image while maintaining its aspect ratio, you can use the `image()` function with calculated width and height values.
 <Br>
-How to Scale Proportionally
-Use a scaling factor: Calculate the new width and height while keeping the original aspect ratio.
+How to Scale Proportionally <br>
+Use a scaling factor: Calculate the new width and height while keeping the original aspect ratio. <br>
 Ensure the image fits: Adjust based on windowWidth and windowHeight.<Br>
 <Br>
-![image](https://github.com/user-attachments/assets/19abd579-5985-4e5b-ad12-3fe5ead7022e)
+<img width="332" alt="image" src="https://github.com/user-attachments/assets/c322c6ab-069b-4df2-b171-5c54479881f7" />
 <br>
 Looking through this example code, I learned how to resize the images and I applied to my codes. (x and y)
+
 <br>
 <img width="959" alt="12  data 사용해서 code 바꿈 (chatgpt)" src="https://github.com/user-attachments/assets/84a3a871-d406-4528-8108-4ca0da8a7674" /><br>
 <br>
-I tried various things while changing the codes and thinking about where and what filters could be applied to produce more impactful results. As a result, there were some errors that occurred in the middle. I also experienced a phenomenon that lags due to the adjustment of the frame rate.<br>
+I tried various things while changing the codes and thinking about where and what filters could be applied to produce more impactful results. For the codes, I have changed the 'mouse clicked()' function with the data based. As a result, there were some errors that occurred in the middle. I also experienced a phenomenon that lags due to the adjustment of the frame rate.<br>
 <br>
 <img width="959" alt="13" src="https://github.com/user-attachments/assets/f5c924b1-dcaa-4e1e-b6fc-cf9db3ce3329" /><br>
 <Br>
