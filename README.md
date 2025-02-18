@@ -45,12 +45,12 @@ First, I had to decide on the background. To give users a strong visual effect, 
 https://p5.glitch.me/#examples 
 <br>
 
-While exploring the p5.js documentation and searching for various effects, I found an interesting glitch effect implemented through code. (noise) 
+While exploring the p5.js documentation and searching for various effects, I found an interesting glitch effect implemented through code. (noise glitch) 
 https://editor.p5js.org/nikiafenix/sketches/plkcniKMn 
 
 
 I applied noise-like effects to the background and implemented an interactive element that makes it feel slightly laggy as if experiencing a glitch. This way, users can feel as though they are navigating within a glitchy, distorted environment, enhancing the immersive experience of the work. I experimented with modifying the numeric values in the code to understand how different elements would change. By adjusting the numbers, I observed various transformations, such as changes in line shapes, colour variations, and alterations in the thickness of the lag-like effect.
-
+<br>
 <img width="959" alt="1" src="https://github.com/user-attachments/assets/092be054-1bde-4885-89ba-76378847849d" />
 
 <img width="959" alt="2" src="https://github.com/user-attachments/assets/a349b632-d61c-41ed-bec3-509fd067df72" />
@@ -69,7 +69,7 @@ I managed to fix this issue by adjusting the order of the filter function in the
 <br>
 <br>
 After that I made a dropdown menu that was covered in Workshop 5. https://p5js.org/reference/p5/createSelect/ <br>
-<br> Then I checked how it works, and I decided to switch to mouse click instead of drop down menu because if the background works for mouse movement and drop down menu is also mouse click and image creation is also mouse click, it will be too moldless work due to too many things.
+<br> Then I checked how it works, and I decided to switch to `mouse clicked()` instead of drop down menu because if the background works for mouse movement and drop down menu is also mouse click and image creation is also mouse click, it will be too moldless work due to too many things.
 
 
 <img width="959" alt="7  dropdown men" src="https://github.com/user-attachments/assets/d9cd06b2-9226-4077-b9cc-fd37518a0ecc" />
@@ -100,7 +100,7 @@ In addition, I asked my friends and looked for a solution together. Furthermore,
 <img width="959" alt="11  xy를 랜덤으로 하는 중 (chatgpt 과정)" src="https://github.com/user-attachments/assets/d529afeb-9265-4a43-ac1a-97c154245e7d" />
 <br>
 My prompt : what is the p5.js code to reduce size of image in proportion
-Response : To reduce the size of an image while maintaining its aspect ratio, you can use the image() function with calculated width and height values.
+Response : To reduce the size of an image while maintaining its aspect ratio, you can use the `image()` function with calculated width and height values.
 <Br>
 How to Scale Proportionally
 Use a scaling factor: Calculate the new width and height while keeping the original aspect ratio.
@@ -116,7 +116,7 @@ I tried various things while changing the codes and thinking about where and wha
 <br>
 <img width="959" alt="13" src="https://github.com/user-attachments/assets/f5c924b1-dcaa-4e1e-b6fc-cf9db3ce3329" /><br>
 <Br>
-For the filter for the image, I used INVERT which makes the user more chaos. 
+For the filter for the image, I used `filter(INVERT)` which makes the user more chaos. 
  https://p5js.org/reference/p5/filter/
 <br>
 Finally, I was able to put the camera at the front and let the images appear every time I clicked. Later, I received feedback from classmates.
@@ -128,19 +128,46 @@ Finally, I was able to put the camera at the front and let the images appear eve
 <br>
 After receiving this feedback, I modified my creative outcome. I thought it would be nice if the camera was at the front, but after receiving the feedback, I also thought that placing the camera in the back could better convey the meaning I was trying to convey. So, I have placed the camera at the back again. However, I wanted to express the user's appearance more specifically, so I changed the camera so that it could appear several times. Moreover, I have tried to change the backgournd colour and I have added a filter of Dilate. This made the webpage to be able to give a feeling of exhaustion of the infinite informations in digital world.  <Br>
 <Br>
-I applied Invert using for loop and then applied Invert again to show a glistening phenomenon. Among these, some pictures sometimes stop working due to errors, but I decided to leave them as they are because they seem to fit the theme of glitch.<Br>
+I applied Invert using `for loop` and then applied `filter(INVERT)` again to show a glistening phenomenon (which looks like glitch). Among these, some pictures sometimes stop working due to errors, but I decided to leave them as they are because they seem to fit the theme of glitch.<Br>
 <Br>
 <img width="953" alt="image" src="https://github.com/user-attachments/assets/22cac4b4-80f4-4774-9e13-35b3bc8dc53d" />
 <Br>
-In the next progress, I got some help from a friend as I thought it would be nice if the camera would be re-generated with some regularity. My friend used 'if' to show me that it would allow the camera to come out when the rest, like 10, 20, 30 and so on, went to zero. Which means that it is going to draw the webcam on the top when count is a multiple of 10. <br>
+In the next progress, I got some help from a friend as I thought it would be nice if the camera would be re-generated with some regularity. My friend used `if` to show me that it would allow the camera to come out when the rest, like 10, 20, 30 and so on, went to zero. Which means that it is going to draw the webcam on the top when count is a multiple of 10. <br>
 <Br>
 The camera appears once with five clicks because the images are created to appear in two. This was able to visually express the user facing digital information, becoming confused in the information, and becoming more and more into it.<Br>
 <Br>
 
+## Future Development
+<br>
+Over the past six weeks, I have learned so much about coding in such a short time. Since I started with little to no knowledge, this project was a significant challenge for me. I spent countless hours watching reference videos, seeking help from my instructor and peers, and gradually strengthening my coding skills. While my final outcome may not feature complex functions or advanced techniques, this experience has taught me how to approach learning code effectively.<Br>
+<Br>
+I used to see coding as something incredibly difficult, a hurdle too high to overcome. However, this project has changed that mindset, and I am grateful for the opportunity to challenge my own limitations.<Br>
+<Br>
+For this project, I explored the theme of Glitch through Rosa Menkman’s A Vernacular of File Formats and Lynne McNeill’s The End of the Internet: A Folk Response to the Provision of Infinite Choice. Despite balancing multiple responsibilities during this period, I was able to complete my creative outcome within the given timeframe. However, if I were to further develop this project, I would focus on enhancing the impact of the webcam. For example, I could introduce glitches when the camera detects a certain number of images or make the camera position randomized to amplify the sense of chaos within the flood of information.<Br>
+<Br>
+Additionally, I would expand the background beyond just images, incorporating more elements that represent the digital world and its overwhelming nature. While this project marks the completion of my creative outcome for now, I believe that, much like the infinite stream of digital information, my growth as a creator is limitless.
+<br>
 
+## Reference / other sources that helped me
 
+- Videos related to Glitch what I have got ideas from<Br>
+<Br>
+https://www.youtube.com/watch?v=-vU8iVKa4Zc <Br>
+https://www.youtube.com/watch?v=ILvxsJcuJf4 <Br>
+https://www.youtube.com/watch?v=r5YkU5Xu4_E <Br>
+https://www.youtube.com/watch?v=moGHXSn5c9E <Br>
+<br>
 
+- Videos related to webcam what I have got ideas from <Br>
+<Br>
+https://www.youtube.com/watch?v=Fp7nkcKi5Dw&t=1037s <Br>
+<Br>
 
+- Videos related to images in p5.js <Br>
+<br>
+https://www.youtube.com/watch?v=i2C1hrJMwz0 <Br>
+https://www.youtube.com/watch?v=FVYGyaxG4To <Br>
+<Br>
 
 
 
