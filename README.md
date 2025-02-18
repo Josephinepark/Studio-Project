@@ -13,7 +13,9 @@ Glitch has the meaning of error. Looking at various digital works related to Gli
 I received positive feedback from my professor on the outcomes of Workshop 3 and Workshop 5. Based on this, I decided to develop my creative outcome further.
 <br>
 <br>- Workshop 3  : involved creating collages using buttons.
+https://josephinepark.github.io/workshop-task-3/ 
 <br>- Workshop 5 : focused on designing a dropdown menu using my portrait data.
+https://josephinepark.github.io/workshop-task-5/ 
 <br>
 <br>Building on these two experiments, I developed the following ideas.
 
@@ -62,21 +64,83 @@ I managed to fix this issue by adjusting the order of the filter function in the
 <br>
 <br>
 <img width="959" alt="3" src="https://github.com/user-attachments/assets/0633ecc7-c761-49ae-9057-fc7eaf0317b9" />
-<img width="959" alt="4" src="https://github.com/user-attachments/assets/b3c37fca-e340-4e20-b150-e8219ee629f8" />
-<img width="959" alt="5  how to put the webcam in the middle aprt" src="https://github.com/user-attachments/assets/a3f86b56-5b8a-4691-a705-8b1e7579701e" />
 <img width="959" alt="5-1  changing the filter order" src="https://github.com/user-attachments/assets/f7bfd506-6c07-4b7e-b2a3-457f0c336dda" />
 <img width="959" alt="6  THRESHOLD filter" src="https://github.com/user-attachments/assets/4f5b3316-e741-44a0-af73-be062eedc9fd" />
 <br>
 <br>
-
-
+After that I made a dropdown menu that was covered in Workshop 5. https://p5js.org/reference/p5/createSelect/ <br>
+<br> Then I checked how it works, and I decided to switch to mouse click instead of drop down menu because if the background works for mouse movement and drop down menu is also mouse click and image creation is also mouse click, it will be too moldless work due to too many things.
 
 
 <img width="959" alt="7  dropdown men" src="https://github.com/user-attachments/assets/d9cd06b2-9226-4077-b9cc-fd37518a0ecc" />
 <img width="959" alt="8  " src="https://github.com/user-attachments/assets/28cc03a2-b0ba-4189-9eca-1e106c96d5b5" />
 <img width="959" alt="9  drop down menu 에서 button 형식으로 바꿈 " src="https://github.com/user-attachments/assets/5caa522f-d73b-4e57-a9ad-94597a669988" />
-<img width="959" alt="10" src="https://github.com/user-attachments/assets/31e7e4f3-0c9d-4e1f-9c8a-5660d867228a" />
-<img width="959" alt="11  xy를 랜덤으로 하는 중 (chatgpt 과정)" src="https://github.com/user-attachments/assets/d529afeb-9265-4a43-ac1a-97c154245e7d" />
-<img width="959" alt="12  data 사용해서 code 바꿈 (chatgpt)" src="https://github.com/user-attachments/assets/84a3a871-d406-4528-8108-4ca0da8a7674" />
+<br>
+Then I uploaded the images after changing them in the drop down menu.<br>
+https://p5js.org/reference/p5/image/ <br>
+<br>
+I thought that the expression method of infinite information pouring into the user was more suitable for the me called glitch than the user choosing a specific topic with the dropdown menu. https://p5js.org/reference/p5/mouseClicked/  At first, when I just placed the images, I thought it was too simple, and it was judged that there was no impact, so I tried various filters.<br>
+<br>
+At first, it was intended to indicate the user's cognitive error by putting a filter on the camera, but when the filter was put on the camera, the filter was applied to the background as well. So I thought that the user reflected on the camera should express the appearance of being lost due to the overflowing information and entering the digital world as it is.<br>
+<br>
 
-<img width="959" alt="13" src="https://github.com/user-attachments/assets/f5c924b1-dcaa-4e1e-b6fc-cf9db3ce3329" />
+During this progress, I have asked chatgpt how to solve this problem.
+My Prompt : How can I only make the (Gray) filter apples the webcam not for the background.
+Response : To apply the GRAY filter only to the webcam feed and not to the entire canvas, you should isolate the filtering effect by using push() and pop(). These functions help to contain the transformation (like filter(GRAY)) to only the webcam image.
+<br>
+<img width="226" alt="image" src="https://github.com/user-attachments/assets/846dec52-d8dc-4c9a-a0a4-5e4f7eeeeafb" />
+<br>
+My Prompt : Still not working. How can I isolate the filter form the background.
+Responst : To make the webcam grayscale while keeping the background unaffected, you can use tint(255, 0). This method is much simpler than using filter(GRAY), which affects the entire canvas.<br>
+<img width="224" alt="image" src="https://github.com/user-attachments/assets/63249b63-4c8f-4d97-b530-fc213a9d9872" /> <br>
+<br>
+In addition, I asked my friends and looked for a solution together. Furthermore, I wanted to place the camera in front of me so that users could continuously see themselves in the digital world.
+
+<br>
+<img width="959" alt="11  xy를 랜덤으로 하는 중 (chatgpt 과정)" src="https://github.com/user-attachments/assets/d529afeb-9265-4a43-ac1a-97c154245e7d" />
+<br>
+My prompt : what is the p5.js code to reduce size of image in proportion
+Response : To reduce the size of an image while maintaining its aspect ratio, you can use the image() function with calculated width and height values.
+<Br>
+How to Scale Proportionally
+Use a scaling factor: Calculate the new width and height while keeping the original aspect ratio.
+Ensure the image fits: Adjust based on windowWidth and windowHeight.<Br>
+<Br>
+![image](https://github.com/user-attachments/assets/19abd579-5985-4e5b-ad12-3fe5ead7022e)
+<br>
+Looking through this example code, I learned how to resize the images and I applied to my codes. (x and y)
+<br>
+<img width="959" alt="12  data 사용해서 code 바꿈 (chatgpt)" src="https://github.com/user-attachments/assets/84a3a871-d406-4528-8108-4ca0da8a7674" /><br>
+<br>
+I tried various things while changing the codes and thinking about where and what filters could be applied to produce more impactful results. As a result, there were some errors that occurred in the middle. I also experienced a phenomenon that lags due to the adjustment of the frame rate.<br>
+<br>
+<img width="959" alt="13" src="https://github.com/user-attachments/assets/f5c924b1-dcaa-4e1e-b6fc-cf9db3ce3329" /><br>
+<Br>
+For the filter for the image, I used INVERT which makes the user more chaos. 
+ https://p5js.org/reference/p5/filter/
+<br>
+Finally, I was able to put the camera at the front and let the images appear every time I clicked. Later, I received feedback from classmates.
+<br>
+<img width="202" alt="image" src="https://github.com/user-attachments/assets/e2b1871d-390a-4174-8a02-3fad075554c0" />
+<img width="511" alt="image" src="https://github.com/user-attachments/assets/6b14724f-93e6-463d-8733-54aae3f176a1" />
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/ab38fd5e-f48a-4c81-95fa-ece2b42d8a20" />
+<img width="188" alt="image" src="https://github.com/user-attachments/assets/5609037d-8554-450b-988a-c4388791592b" />
+<br>
+After receiving this feedback, I modified my creative outcome. I thought it would be nice if the camera was at the front, but after receiving the feedback, I also thought that placing the camera in the back could better convey the meaning I was trying to convey. So, I have placed the camera at the back again. However, I wanted to express the user's appearance more specifically, so I changed the camera so that it could appear several times. Moreover, I have tried to change the backgournd colour and I have added a filter of Dilate. This made the webpage to be able to give a feeling of exhaustion of the infinite informations in digital world.  <Br>
+<Br>
+I applied Invert using for loop and then applied Invert again to show a glistening phenomenon. Among these, some pictures sometimes stop working due to errors, but I decided to leave them as they are because they seem to fit the theme of glitch.<Br>
+<Br>
+<img width="953" alt="image" src="https://github.com/user-attachments/assets/22cac4b4-80f4-4774-9e13-35b3bc8dc53d" />
+<Br>
+In the next progress, I got some help from a friend as I thought it would be nice if the camera would be re-generated with some regularity. My friend used 'if' to show me that it would allow the camera to come out when the rest, like 10, 20, 30 and so on, went to zero. Which means that it is going to draw the webcam on the top when count is a multiple of 10. <br>
+<Br>
+The camera appears once with five clicks because the images are created to appear in two. This was able to visually express the user facing digital information, becoming confused in the information, and becoming more and more into it.<Br>
+<Br>
+
+
+
+
+
+
+
+
